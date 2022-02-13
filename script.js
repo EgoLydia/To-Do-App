@@ -2,11 +2,18 @@
   const addbutton = document.getElementById("add");
   const tasks = document.getElementById("tasks");
   addbutton.addEventListener("click", addNewItem);
+  taskinput.addEventListener("keyup", processKeyPress);
   const items = await getItems();
   console.log(items);
   for (let item in items) {
     const li = createElementForTask(items[item]);
     tasks.appendChild(li);
+  function processKeyPress(event) {
+    addbutton.disabled = event.target.value.trim() === "";
+    if (event.key === "Enter") {
+      addNewItem();
+    }
+  }
   function createElementForTask(item) {
     const template = document.getElementById("taskTemplate");
     const newListItem = template.content.cloneNode(true);
@@ -33,3 +40,4 @@
 
     taskinput.value = "";
     taskinput.focus();
+    addbutton.disabled = true;
