@@ -16,3 +16,38 @@ header {
   background-color: #af7eeb;
   color: white;
 }
+h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.new {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.new-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-size: 1.2em;
+}
+
+.new-button {
+  border: 0;
+  padding: 0 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: #af7eeb;
+  cursor: pointer;
+}
+
+.new-button:hover {
+  background-color: #7e3ece;
+}
+
+.new-button:disabled {
+  background-color: #ccc;
+  cursor: default;
