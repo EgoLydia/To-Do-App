@@ -72,3 +72,28 @@ li {
   padding: 0;
   list-style: none;
 }
+
+.delete {
+  visibility: hidden;
+  width: 20px;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: url(delete\ btn.png) no-repeat right;
+  background-size: contain;
+  color: transparent;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-image: url(delete\ btn.png);
+  color: #af7eeb;
+}
+
+.item:hover .delete {
+  visibility: visible;
+}
+
+.item-check:checked + .item-text {
+  text-decoration: line-through;
+}
