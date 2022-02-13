@@ -24,6 +24,8 @@
     text.innerText = item.value;
     checkbox.checked = item.complete;
 
+    checkbox.onchange = function (event) {
+      item.complete = event.target.checked;
     };
 
     deleteButton.onclick = function (event) {
