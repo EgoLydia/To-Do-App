@@ -72,6 +72,7 @@
     };
     items.push(task);
     saveItems();
+
     let newItem = createElementForTask(task);
     tasks.appendChild(newItem);
 
