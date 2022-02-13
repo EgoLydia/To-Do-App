@@ -16,6 +16,7 @@ header {
   background-color: #af7eeb;
   color: white;
 }
+
 h1 {
   margin: 0;
   font-size: 1.6em;
@@ -52,6 +53,7 @@ h1 {
   background-color: #ccc;
   cursor: default;
 }
+
 .item {
   display: flex;
   padding: 20px 10px;
