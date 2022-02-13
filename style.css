@@ -52,3 +52,23 @@ h1 {
   background-color: #ccc;
   cursor: default;
 }
+.item {
+  display: flex;
+  padding: 20px 10px;
+  background-color: white;
+}
+
+.item.check {
+  margin-right: 20px;
+}
+
+.item-text {
+  color: #6d748a;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
